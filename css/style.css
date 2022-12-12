@@ -3,6 +3,41 @@
 
 }
 
-.text {
-    color: var(--main-text-color);
+
+.fileBtn {
+    display: inline-flex;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin: 30px;
+}
+.popUpContainer {
+    width: 375px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.31);
+    position: relative;
+    padding: 20px;
+    background-color: #fff;
+}
+.popUpContainer .closeBtn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.popUpContainer p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.bg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
