@@ -30,7 +30,6 @@ class ParentComponent extends React.Component {
         }}
     >Open PopUp</div>;
 
-    console.log(materialsPopup);
     return <div className="root">
         <div className="header">
             <OpenBtn/>
