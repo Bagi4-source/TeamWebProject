@@ -43,28 +43,34 @@
                 </div>
                 <div class="review">
                     <div class="review-info col-10 col-md-8">
-                        <div class="review-logo">
-                            <img src="images/review_logo.png" alt="Логотип WinAmp">
-                        </div>
-                        <div class="review-title">
-                            <a href="">Команда Drupal Coder вызвала только положительные впечатления!</a>
-                        </div>
-                        <div class="review-description">
-                            Нуреев Александр, менеджер проекта Winamp Russian Community
+                        <div class="review-content">
+                            <div class="review-logo">
+                                <img src="images/review_logo.png" alt="Логотип отзыва">
+                            </div>
+                            <div class="review-title">
+                                <a href="">1 Команда Drupal Coder вызвала только положительные впечатления!</a>
+                            </div>
+                            <div class="review-description">
+                                Нуреев Александр, менеджер проекта Winamp Russian Community
+                            </div>
                         </div>
                     </div>
                     <div class="review-control col-6 col-md-4">
-                        <svg class="review-control-button" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17 1L1 17L17 33" stroke="#050C33"/>
-                        </svg>
+                        <button onclick="prevReview()" class="review-btn">
+                            <svg class="review-control-button" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 1L1 17L17 33" stroke="#050C33"/>
+                            </svg>
+                        </button>
                         <div class="review-control-status">
                             <span class="reviews-PgNumber">01</span>
                             <span class="reviews-control-delimeter">/</span>
-                            <span class="reviews-count">04</span>
+                            <span class="reviews-count">00</span>
                         </div>
-                        <svg class="review-control-button" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L17 17L1 33" stroke="#050C33"/>
-                        </svg>
+                        <button onclick="nextReview()" class="review-btn">
+                            <svg class="review-control-button" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L17 17L1 33" stroke="#050C33"/>
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -82,5 +88,6 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <script type="text/babel" src="scripts/contact-popup.js" crossorigin></script>
+    <script src="scripts/reviews.js"></script>
 </body>
 </html>
