@@ -25,7 +25,7 @@ a {
 }
 
 .title {
-    text-align: left;
+    text-align: start;
     font-size: var(--title-font-size);
     font-weight: 700;
 }
