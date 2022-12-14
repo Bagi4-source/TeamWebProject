@@ -1,0 +1,155 @@
+.right-quote {
+    width: 250px;
+    position: absolute;
+    margin-left: -80px;
+    margin-top: -80px;
+    z-index: -1000;
+    opacity: 0.04;
+}
+.review-box {
+    position: relative;
+    margin-top: 20px;
+}
+
+.bg-review {
+    position: absolute;
+    display: none !important;
+}
+
+.bg-review:nth-child(1) {
+    top: -45px;
+    opacity: 0.5;
+    scale: 0.9;
+    z-index: -1;
+}
+
+.bg-review:nth-child(2) {
+    top: -90px;
+    opacity: 0.34;
+    scale: 0.8;
+    z-index: -2;
+}
+
+.review {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 60px rgba(162, 162, 162, 0.25);
+    border-radius: 5px;
+}
+
+.review-control {
+    margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.review-control-button {
+    height: 22px;
+}
+
+div:has( > .review-control-button) {
+    cursor: pointer;
+}
+
+.review-control-status {
+    margin: 0 20px;
+    font-size: 14pt;
+}
+
+.reviews-control-delimeter, .reviews-count {
+    color: var(--gray-text-color);
+}
+
+.review-info {
+    padding: 25px 0;
+    border-right: none;
+}
+
+.review-logo img {
+    height: 30px;
+}
+
+.review-title {
+    margin: 25px 0;
+    font-weight: 700;
+    font-size: 12pt;
+}
+
+.review-title:hover {
+    text-decoration: underline;
+}
+
+.review-description {
+    color: #050c336e;
+    font-weight: 500;
+    font-size: 8pt;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .review {
+        padding: 40px 0;
+        flex-direction: row;
+    }
+
+    .review-info {
+        border-right: 1px solid #00000021;
+        padding: 25px 25px 25px 75px;
+    }
+    .review-title {
+        font-size: 14pt;
+    }
+    .review-description {
+        font-size: 10pt;
+    }
+
+    .review-box {
+        margin-top: 120px;
+    }
+
+    .right-quote {
+        width: 350px;
+    }
+
+    .bg-review {
+        display: block !important;
+    }
+
+    .review-control-status {
+        font-size: 18pt;
+    }
+
+    .review-control-button {
+        height: 30px;
+    }
+
+    .review-logo img {
+        height: 40px;
+    }
+
+    .review-control {
+        margin: 0;
+    }
+}
+
+
+.review-btn {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
