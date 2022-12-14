@@ -15,6 +15,7 @@
 }
 
 .support-bg .content {
+    pointer-events: none;
     position: relative;
 }
 

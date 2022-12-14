@@ -1,3 +1,200 @@
 header {
-    height: 500px;
+    position: relative;
+    color: white;
+    background: url(../images/header_bg.png);
+}
+
+
+.burger {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#menu {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+#menu img{
+    width: 35px;
+}
+
+.header-bg {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+}
+
+.high-text {
+    font-size: 26pt;
+    font-weight: 700;
+}
+
+.secondary-text {
+    opacity: 0.8;
+    margin: 20px 0 50px 0;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 80px;
+    margin-bottom: 50px !important;
+}
+
+.header-dude {
+    width: 600px;
+}
+
+.plans-btn {
+    color: white;
+    height: 65px;
+    width: 200px;
+    background: none;
+    border: 2px solid #F14D34;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-advantages {
+    padding: 50px 0;
+}
+
+.header-advantage {
+    margin: 50px 0;
+    border-left: 3px solid #F14D34;
+}
+
+.header-advantage-icon {
+    width: 65px;
+    margin-top: -25px;
+}
+
+.header-advantage-text {
+    font-weight: 600;
+    font-size: 12pt;
+}
+
+.header-advantage:first-child .header-advantage-number {
+    margin-top: -30px;
+    font-size: 48px;
+}
+
+
+.header-advantage-number {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.main-logo {
+    padding: 25px 0 !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: auto;
+    width: 100%;
+}
+
+.main-logo img{
+    max-width: 240px;
+    width: 55%;
+}
+
+.logo {
+    margin-right: 40px;
+    width: 160px;
+}
+
+.logo img {
+    width: inherit;
+}
+
+.links {
+    display: flex;
+}
+
+.link {
+    font-size: 10pt;
+    opacity: 0.8;
+    margin-right: 30px;
+}
+
+.active-link {
+    opacity: 1 !important;
+    border-bottom: 3px solid #F14D34;
+}
+
+
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.phone {
+    font-size: 14pt;
+    margin: 0 20px;
+}
+
+.lang {
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+    .header-advantage-number {
+        font-size: 24px;
+    }
+
+    .header-advantage:first-child .header-advantage-number {
+        margin-top: -25px;
+        font-size: 44px;
+    }
+
+    .header-advantage-text {
+        font-weight: 500;
+        opacity: 0.7;
+        font-size: 9pt;
+    }
+
+    .header-advantage-text {
+        opacity: 0.7;
+        font-size: 10pt;
+    }
+}
+
+
+@media (min-width: 360px) {
+    #menu img{
+        width: 40px;
+    }
+}
+
+@media (min-width: 480px) {
+    #menu img{
+        width: 45px;
+    }
 }
