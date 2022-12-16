@@ -6,6 +6,7 @@
 }
 
 html, body {
+    overflow-x:hidden;
     scroll-behavior: smooth;
     color: var(--main-text-color) !important;
     font-weight: 500;
