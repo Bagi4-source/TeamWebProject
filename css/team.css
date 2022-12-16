@@ -59,7 +59,7 @@
         padding-bottom: 60px;
     }
     #team-image {
-        width: 280px;
-        height: 280px;
+        max-width: 280px;
+        max-height: 280px;
     }
 }
