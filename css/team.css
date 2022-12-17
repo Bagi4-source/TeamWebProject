@@ -1,7 +1,7 @@
-.team-image {
+#team-image {
     object-fit: cover;
-    margin-bottom: 30px;
     width: 100%;
+    padding-bottom: 30px;
 }
 .team-name {
     width: 100%;
@@ -26,32 +26,39 @@
     margin-bottom: 40px;
 }
 .team-group {
-    margin-top: 40px !important;
+    padding-top: 20px;
 }
-
+.team .title {
+    padding-bottom: 20px;
+}
 .team {
     width: 100%;
+    padding-top: 100px;
 }
 @media only screen and (min-width: 768px) {
     .team-name {
         font-size: 16px;
         line-height: 22px;
-        max-width: 280px;
-        max-height: 280px;
+        width: 280px;
     }
-
-    .team-group {
-        margin-top: 60px !important;
-    }
-
     .team-info {
         font-size: 16px;
         line-height: 22px;
-        max-width: 280px;
-        max-height: 280px;
+        width: 280px;
     }
-
-    .team-image {
+    .team-group {
+        padding-top: 55px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .team .title {
+        padding-bottom: 25px;
+    }
+    .team {
+        padding-top: 160px;
+        padding-bottom: 60px;
+    }
+    #team-image {
         max-width: 280px;
         max-height: 280px;
     }
