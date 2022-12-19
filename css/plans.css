@@ -1,10 +1,20 @@
 .plans {
     text-align: center;
-    margin-bottom: 100px;
+    margin-top: 160px;
+    margin-bottom: 140px;
+    position: relative;
+}
+
+.D_of_plans{
+    display: block!important;
+    height: inherit;
+    pointer-events: none;
+    right: 0;
+    position: absolute;
 }
 
 .plans .title{
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .plans .describe{
@@ -28,14 +38,14 @@ button[name="but_plans"]{
 }
 
 .tarif{
-    --bs-gutter-x: 8.5rem;
+    --bs-gutter-x: 4.5rem;
     --bs-gutter-y: 0;
     display: flex;
     flex-wrap: wrap;
     margin-top: calc(-1 * var(--bs-gutter-y));
     margin-right: calc(-.5 * var(--bs-gutter-x));
     margin-left: calc(-.5 * var(--bs-gutter-x));
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }
 
 .title_tarif{
@@ -48,18 +58,19 @@ button[name="but_plans"]{
 
 .cost_tarif{
     display: flex;
-    margin-top: -10px;
+    justify-content: flex-start;
+    margin-top: -18px;
 }
 
 .money_cost_tarif{
     font-weight: 700;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .rub_cost_tarif{
     font-weight: 500;
     font-size: 20px;
-    line-height: 46px;
+    line-height: 65px;
 }
 
 .time_tarif{
@@ -78,12 +89,13 @@ button[name="but_plans"]{
 
 .advantages_tarif{
     text-align: start;
+    margin-bottom: 75px;
 }
 
 .advantage_tarif{
     display: flex;
     align-items: flex-start;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .svg_tarif{
@@ -96,11 +108,54 @@ button[name="but_plans"]{
     opacity: 0.7;
 }
 
+.btn_form_another{
+    background: #FFFFFF;
+    border: 1px solid rgba(241, 77, 52, 0.5);;
+    border-radius: 5px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn_form_another span{
+    color: #F14D34;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.btn_form_biznes{
+    background: #F14D34;
+    border-radius: 5px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.btn_form_biznes span{
+    color: #FFFFFF;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    display: flex;
+}
+
 
 .tarif_number{
     padding: 40px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    background: #FFFFFF;
 }
 
 .tarif-2{
@@ -110,8 +165,13 @@ button[name="but_plans"]{
 }
 
 @media only screen and (max-width: 768px) {
+    .plans{
+        margin-top:100px;
+    }
+
     .plans .title {
         text-align: start;
+        margin-bottom: 20px;
     }
 
     .plans .describe{
@@ -120,5 +180,52 @@ button[name="but_plans"]{
 
     button[name="but_plans"]{
         font-size: 8pt;
+    }
+
+    .tarif_number{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .tarif-2{
+        transform: scale(1);
+    }
+
+    .plans {
+        margin-bottom: 80px;
+    }
+    
+    .tarif{
+        margin-bottom: 20px;
+    }
+
+    .title_tarif{
+        text-align: center;
+    }
+    
+    .cost_tarif{
+        margin-top: -10px;
+        margin-left: 6px;
+        justify-content: center;
+    }
+
+    .money_cost_tarif{
+        font-size: 30px;
+    }
+
+    .rub_cost_tarif{
+        font-size: 15px;
+        line-height: 35px;
+    }
+
+    .time_tarif{
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    .D_of_plans{
+        display: none!important;
     }
 }
