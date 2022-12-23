@@ -1,3 +1,6 @@
+.team .title {
+    margin-top: 100px;
+}
 .team-image {
     object-fit: cover;
     margin-bottom: 30px;
@@ -54,5 +57,9 @@
     .team-image {
         max-width: 280px;
         max-height: 280px;
+    }
+    .team .title 
+    {
+        margin-top: 160px;
     }
 }
