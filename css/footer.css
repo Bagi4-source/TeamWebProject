@@ -1,3 +1,209 @@
+div[name="foot_content"]{
+    margin: auto;
+    width: 90%;
+    padding: 0 10px;
+    position: relative;
+}
+
 footer {
-    height: 500px;
+    background-color: rgba(4, 6, 19, 1);
+    color: #FFFFFF;
+    position: relative;
+}
+
+.up_footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+    padding-top: 20px;
+}
+
+.contacts_footer{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 80px 80px 40px 0;
+}
+
+.contacts_title{
+    text-align: start;
+    font-size: 20pt;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contacts_description{
+    Opacity: 70%;
+}
+
+.contacts_phone{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contacts_svg{
+    margin-right: 20px;
+}
+
+.contacts_phone_text{
+    font-weight: 700;
+    font-size: 18pt;
+}
+
+.contacts_mail{
+    display: flex;
+    align-items: center;
+}
+
+.contacts_mail_text{
+    font-weight: 700;
+    font-size: 14pt;
+    text-decoration-line: underline;
+}
+
+form[type="footer_form"]{
+    display: grid;
+}
+
+.application_form{
+    margin: 80px 0 40px 80px;
+}
+
+.application_form + form{
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+}
+form label{
+    margin: 5px 0 5px 0;
+}
+
+input[type="footer"], textarea[name="comment_form"]{
+    width: 100%;
+    background-color: rgba(4, 6, 19, 1);
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 14px;
+    color: white;
+}
+button[name="application_form"]{
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 14px;
+    background: #F14D34;
+    color:#FFFFFF;
+}
+
+footer label textarea{
+    height: 140px;
+}
+
+label[name="checkbox_foot"]{
+    display: flex;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 400;
+    align-items: center;
+}
+
+input[name="check-1"]{
+    width: 40px;
+    transform: scale(1.5);
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #FFFFFF;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #FFFFFF;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #FFFFFF;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #FFFFFF;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #FFFFFF;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    #FFFFFF;
+}
+
+.down_footer_text1{
+    opacity: 0.5;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.down_footer_text2{
+    opacity: 0.5;
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 50px;
+}
+
+.svg_d_center_footer{
+    display: block!important;
+    position: absolute;
+    top: 0;
+    left: 38%;
+    right: 35%;
+}
+
+.svg_end_footer{
+    display: block!important;
+    position: absolute;
+    right:0;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 1100px){
+    .svg_d_center_footer{
+        left:32%;
+    }
+    .svg_end_footer{
+        display: none!important;
+    }
+}
+
+@media only screen and (max-width: 880px){
+    .svg_d_center_footer{
+        right:35%;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    div[name="foot_content"]{
+        max-width: 1280px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .svg_d_center_footer{
+        display: none!important;
+    }
+    .up_footer{
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+    .contacts_footer{
+        margin: 20px 0 0 0;
+    }
+    .application_form{
+        margin: 20px 0 0 0;
+    }
+    .contacts_phone{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
